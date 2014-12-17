@@ -1048,6 +1048,19 @@
     browser.enableSwipeToDismiss = YES;
     [browser setCurrentPhotoIndex:0];
     
+    
+    // Dark color sceheme
+    browser.navigationBarStyle = UIBarStyleBlackTranslucent;
+    browser.navigationBarTintColor = [UIColor whiteColor];
+    browser.navigationBarBarTintColor = [UIColor greenColor];
+    browser.toolbarBarStyle = UIBarStyleBlackTranslucent;
+    browser.toolbarTintColor = [UIColor whiteColor];
+    browser.toolbarBarTintColor = [UIColor greenColor];
+    browser.backgroundColor = [UIColor whiteColor];
+    browser.progressColor = [UIColor whiteColor];
+    browser.imageCellBackgroundColor = [UIColor colorWithWhite:0.12 alpha:1];
+    browser.imageCellProgressTintColor = [UIColor whiteColor];
+    
     // Reset selections
     if (displaySelectionButtons) {
         _selections = [NSMutableArray new];
