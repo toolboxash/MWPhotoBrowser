@@ -179,8 +179,8 @@
         _toolbar.barTintColor = _toolbarBarTintColor;
     }
     if ([[UIToolbar class] respondsToSelector:@selector(appearance)]) {
-        [_toolbar setBackgroundImage:nil forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
-        [_toolbar setBackgroundImage:nil forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsLandscapePhone];
+        [_toolbar setBackgroundImage:_toolbarBackgroundImage forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
+        [_toolbar setBackgroundImage:_toolbarBackgroundImage forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsLandscapePhone];
     }
     _toolbar.barStyle = _toolbarBarStyle;
     _toolbar.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth;
@@ -466,8 +466,8 @@
     navBar.translucent = YES;
     navBar.barStyle = _navigationBarStyle;
     if ([[UINavigationBar class] respondsToSelector:@selector(appearance)]) {
-        [navBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
-        [navBar setBackgroundImage:nil forBarMetrics:UIBarMetricsLandscapePhone];
+        [navBar setBackgroundImage:_navigationBarBackgroundImage forBarMetrics:UIBarMetricsDefault];
+        [navBar setBackgroundImage:_navigationBarBackgroundImage forBarMetrics:UIBarMetricsLandscapePhone];
     }
 }
 
