@@ -66,6 +66,7 @@
 @property (nonatomic, strong) UIColor *progressColor;
 @property (nonatomic, strong) UIColor *imageCellBackgroundColor;
 @property (nonatomic, strong) UIColor *imageCellProgressTintColor;
+@property (nonatomic, assign) UIStatusBarStyle statusBarStyle;
 
 // Init
 - (id)initWithPhotos:(NSArray *)photosArray  __attribute__((deprecated("Use initWithDelegate: instead"))); // Depreciated

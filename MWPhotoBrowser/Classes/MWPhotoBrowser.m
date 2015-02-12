@@ -379,10 +379,10 @@
         if (SYSTEM_VERSION_LESS_THAN(@"7")) {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-            [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent animated:animated];
+            [[UIApplication sharedApplication] setStatusBarStyle:_statusBarStyle animated:animated];
 #pragma clang diagnostic push
         } else {
-            [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:animated];
+            [[UIApplication sharedApplication] setStatusBarStyle:_statusBarStyle animated:animated];
         }
     }
     
